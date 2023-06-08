@@ -79,10 +79,6 @@ const mostrarAlerta = (tipo) => {
     }
 
     alertaContenedor.appendChild(alerta);
-
-    setTimeout(() => {
-        alerta.remove();
-    }, 3000);
 }
 
 //LOGICA COMPUTADORA
