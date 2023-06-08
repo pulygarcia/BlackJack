@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>21 Blackjack</title>
+</head>
+<body class="bg-emerald-900">
+    <header class="py-4 bg-amber-950">
+        <h1 class="text-center text-white font-bold text-2xl md:text-3xl">21 - Blackjack <i class="bi bi-suit-spade-fill"></i> <i class="bi bi-suit-heart-fill"></i> <i class="bi bi-suit-diamond-fill"></i> <i class="bi bi-suit-club-fill"></i></h1>
+    </header>
+
+    <div class="flex justify-center gap-1 mt-5">
+        <button class="py-2 px-3 bg-red-600 text-white rounded font-bold hover:bg-red-700 transition" id="reiniciar">Nuevo juego</button>
+        <button class="py-2 px-3 bg-amber-500 text-white rounded font-bold hover:bg-amber-600 transition" id="pedir-carta">Pedir carta</button>
+        <button class="py-2 px-3 bg-amber-500 text-white rounded font-bold hover:bg-amber-600 transition" id="detener">Detener</button>
+    </div>
+
+    <div class="alerta"></div>
+
+    <!--JUEGO-->
+    <section class="mt-12 container mx-auto">
+        <!--Jugador-->
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white">Jugador - <span>0</span></h2>
+        <div id="jugador-cartas" class="mt-5 flex">
+
+        </div>
+
+        <!--Computadora-->
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mt-16 md:mt-40">Computadora - <span>0</span></h2>
+
+        <div id="computadora-cartas" class="mt-2 flex">
+            
+        </div>
+    </section>
+
+    <script src="underscore.min.js"></script>
+    <script src="juego.js"></script>
+</body>
+</html>
