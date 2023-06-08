@@ -13,6 +13,7 @@ const cartasJugador = document.querySelector('#jugador-cartas');
 const cartasComputadora = document.querySelector('#computadora-cartas');
 const nuevoJuegoBtn = document.querySelector('#reiniciar');
 const puntosSpan = document.querySelectorAll('span');
+const alertaContenedor = document.querySelector('.alerta');
 
 
 const llenarMaso = () => {
@@ -62,8 +63,6 @@ const valorCarta = (carta) => {
 //Alerta
 const mostrarAlerta = (tipo) => {
     pedirCartaBtn.disabled = true;
-
-    const alertaContenedor = document.querySelector('.alerta');
 
     const alerta = document.createElement('P');
     alerta.classList.add('p-2', 'text-center', 'font-bold', 'text-2xl', 'mt-5', 'text-white');
@@ -178,6 +177,8 @@ nuevoJuegoBtn.addEventListener('click', () => {
 
     cartasJugador.innerHTML = '';
     cartasComputadora.innerHTML = '';
+    
+    alertaContenedor.innerHTML = '';
 
     pedirCartaBtn.disabled = false;
     detenerBtn.disabled = false;
