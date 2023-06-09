@@ -1,4 +1,5 @@
-//Array que contendrá las cartas
+(function(){
+    //Array que contendrá las cartas
 let maso = [];
 const tipos = ['C', 'D', 'H', 'S']; //Clumbs(treboles), Diamonds, Hearts, Spades
 const especiales = ['A', 'J', 'Q', 'K'];
@@ -179,3 +180,5 @@ nuevoJuegoBtn.addEventListener('click', () => {
     pedirCartaBtn.disabled = false;
     detenerBtn.disabled = false;
 })
+
+})();
